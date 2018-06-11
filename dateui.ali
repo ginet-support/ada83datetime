@@ -1,0 +1,111 @@
+V "GNAT Lib v2016"
+M P W=b
+A -gnat83
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U dateui%b		dateui.adb		d48ea0a2 NE OO SU
+Z ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W ada.text_io.integer_io%s
+W calendar%s		calendar.ads		calendar.ali
+W dates%s		dates.adb		dates.ali
+W text_io%s		text_io.ads		text_io.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-calend.ads		20160516092930 2d5f01d4 ada.calendar%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-tiinau.ads		20160516092930 8114c8e4 ada.text_io.integer_aux%s
+D a-tiinio.ads		20160516092928 aa04e5d6 ada.text_io.integer_io%s
+D a-tiinio.adb		20160516092930 df9cd7af ada.text_io.integer_io%b
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D calendar.ads		20160516092926 2cb525cd calendar%s
+D dates.ads		20160910165814 d47a303f dates%s
+D dateui.adb		20160910180346 69979399 dateui%b
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D system.ads		20160516092930 2da59038 system%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+D text_io.ads		20160516092930 45d626c9 text_io%s
+X 2 a-calend.ads
+44I9*Time<213I9> 14|11r24
+71U14*Split 14|31s8 33s8 35s8
+213I9 Time_Rep<long_long_integer>
+X 7 a-textio.ads
+166U14*New_Line 14|26s4 28s56 32s71 34s71 36s71 38s129 44s55
+208U14*Put 14|32s23 32s48 34s23 34s48 36s23 36s48
+242U14*Put 14|25s4 25s46 28s4 28s43 38s8 38s45 38s85 42s11 43s11 44s11 48s8
+. 48s29 48s64 48s102
+X 9 a-tiinio.ads
+46k21*Integer_IO 85e27 14|6r26
+66U14 Put 14|25s28[6] 28s27[6] 32s8[6] 32s32[6] 32s57[6] 34s8[6] 34s32[6]
+. 34s57[6] 36s8[6] 36s32[6] 36s57[6] 38s23[6] 38s61[6] 38s103[6] 42s26[6]
+. 43s28[6] 44s26[6] 48s43[6] 48s80[6] 48s120[6]
+X 12 calendar.ads
+18K9*Calendar=18:30 14|1w15 2r14
+X 13 dates.ads
+2K9*Dates 38e10 14|1w25 2r24
+6R12*Time_Result 11e17 14|17r17
+8i10*Days{integer} 14|38r38 48r58
+9i10*Hours{integer} 14|38r76 48r95
+10i10*Minutes{integer} 14|38r118 48r135
+15i13*Year{integer} 14|42r50
+16i13*Month{integer} 14|43r52
+17i13*Day{integer} 14|44r50
+20A12*Detail_List(13R12)<integer>
+22R12*Detail_Results 26e20 14|18r18
+24a13*Item{20A12} 14|42m42 43m44 44m42
+25i13*Depth{integer} 14|41r34
+28V13*Today{2|44I9} 14|22s11
+29V13*Date_To_Date{integer} 14|24s19
+30V13*Days_To_Date{integer} 14|27s17
+31V13*Days_From_Now{2|44I9} 14|29s13
+32V13*Days_From_Date{2|44I9} 14|30s13
+33V13*Day_And_Time{6R12} 14|37s22
+34V13*DateDetail{22R12} 14|39s23
+35V13*Date_To_Time{6R12} 14|47s22
+X 14 dateui.adb
+5U11*DateUI 5b11 51l8 51t14
+6K12 Int_Io[9|46] 7r8
+9a4 Copyright{string}
+11i4 Time1{2|44I9} 29m4 31r14
+11i11 Time2{2|44I9} 30m4 33r14
+11i18 Now{2|44I9} 22m4 35r14
+13i4 Manual_Days{integer} 24m4 25r32
+13i17 From_Days{integer} 27m4 28r31
+14i4 From_Year{integer} 31m20 32r12 33m20 34r12 35m18 36r12
+14i15 From_Month{integer} 31m30 32r36 33m30 34r36 35m28 36r36
+14i27 From_Day{integer} 31m41 32r61 33m41 34r61 35m39 36r61
+15o4 Dummy{duration} 31m50 33m50 35m48
+17r4 The_Result{13|6R12} 37m8 38r27 38r65 38r107 47m8 48r47 48r84 48r124
+18r4 The_Details{13|22R12} 39m8 41r22 42r30 43r32 44r30
+41i12 I{integer} 42r47 43r49 44r47
+X 29 text_io.ads
+24K9*Text_IO=24:29 14|1w6 2r5
+

@@ -1,0 +1,167 @@
+V "GNAT Lib v2016"
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_FIXED_POINT
+RV SPARK_05
+
+U dates%b		dates.adb		baa500d2 NE OO PK KM
+W calendar%s		calendar.ads		calendar.ali
+
+U dates%s		dates.ads		41fa554f EE NE OO PK
+W calendar%s		calendar.ads		calendar.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-calend.ads		20160516092930 2d5f01d4 ada.calendar%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D calendar.ads		20160516092926 2cb525cd calendar%s
+D dates.ads		20160911151316 6d4f7082 dates%s
+D dates.adb		20160911151804 fb5f559d dates%b
+D system.ads		20160516092930 2da59038 system%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+X 2 a-calend.ads
+44I9*Time<213I9> 5|28r26 31r53 32r69 6|4r26 11r22 33r21 66r50 68r21 92r66
+. 94r11 121r21 158r12 203r12
+58V13*Clock{44I9} 6|6s14 43s13 78s13 84s12 215s16
+71U14*Split 6|45s1 86s1 112s1 173s4 187s4 217s4
+82V13*Time_Of{44I9} 6|19s14 20s12 47s12 104s12 132s12 133s13
+102V14*"+"{44I9} 6|84s18 110s20
+105V14*"-"{duration} 6|22s22 49s22 135s23
+111V14*"<"{boolean} 6|52s12
+213I9 Time_Rep<long_long_integer>
+X 4 calendar.ads
+18K9*Calendar=18:30 5|1w6 1r20 6|1w6 1r20
+X 5 dates.ads
+2K9*Dates 38l5 38e10 6|3b14 272l5 272t10
+4a7*Copyright{string}
+6R12*Time_Result 11e17 33r140 35r64 36r65 6|118r138 120r14 201r61 207r14
+. 239r62 240r14
+8i10*Days{integer} 6|142m12 230m15 261m15
+9i10*Hours{integer} 6|143m12 231m15 262m15
+10i10*Minutes{integer} 6|144m12 232m15 263m15
+13R12*Detail_Result 18e20 20r43 6|162r13
+15i13*Year{integer} 6|175m14 189m14
+16i13*Month{integer} 6|175m42 189m42
+17i13*Day{integer} 6|175m72 189m72
+20A12*Detail_List(13R12)<integer> 24r20
+22R12*Detail_Results 26e20 34r80 6|150r77 161r11
+24a13*Item{20A12} 6|176m12 190m12
+25i13*Depth{integer} 6|177m12 196m12
+28V13*Today{2|44I9} 6|4b13 7l8 7t13
+29V13*Date_To_Date{integer} 29>26 29>37 29>49 29>59 29>68 29>78 6|9b10 29l5
+. 29t17
+29i26 From_Year{integer} 6|9b23 19r22
+29i37 From_Month{integer} 6|9b34 19r32
+29i49 From_Day{integer} 6|9b46 19r43
+29i59 To_Year{integer} 6|9b56 20r20
+29i68 To_Month{integer} 6|9b65 20r28
+29i78 To_Day{integer} 6|9b75 20r37
+30V13*Days_To_Date{integer} 30>26 30>34 30>43 6|31b10 64l5 64t17
+30i26 To_Year{integer} 6|31b23 47r20
+30i34 To_Month{integer} 6|31b31 47r28
+30i43 To_Day{integer} 6|31b40 47r37
+31V13*Days_From_Now{2|44I9} 31>27 6|66b10 90l5 90t18
+31i27 Days{integer} 6|66b24 80r12
+32V13*Days_From_Date{2|44I9} 32>28 32>33 32>39 32>43 6|92b10 116l5 116t19
+. 172s16 186s16
+32i28 Year{integer} 6|92b25 104r20
+32i33 Month{integer} 6|92b30 104r25
+32i39 Day{integer} 6|92b36 104r31
+32i43 Days{integer} 6|92b40 106r12
+33V13*Day_And_Time{6R12} 33>26 33>36 33>47 33>56 33>66 33>78 33>86 33>95
+. 33>102 33>110 6|118b10 148l5 148t17
+33i26 From_Year{integer} 6|118b23 132r20
+33i36 From_Month{integer} 6|118b33 132r30
+33i47 From_Day{integer} 6|118b44 132r41
+33i56 From_Hour{integer} 6|118b53 129r17
+33i66 From_Minute{integer} 6|118b63 129r38
+33i78 To_Year{integer} 6|118b75 133r21
+33i86 To_Month{integer} 6|118b83 133r29
+33i95 To_Day{integer} 6|118b92 133r38
+33i102 To_Hour{integer} 6|118b99 130r17
+33i110 To_Minute{integer} 6|118b107 130r36
+34V13*DateDetail{22R12} 34>24 34>29 34>35 34>39 34>48 6|150b10 199l5 199t15
+34i24 Year{integer} 6|150b21 172r31 186r31
+34i29 Month{integer} 6|150b26 172r36 186r36
+34i35 Day{integer} 6|150b32 172r42 186r42
+34i39 Interval{integer} 6|150b36 171r19 184r19
+34i48 Total_Days{integer} 6|150b45 167r7 169r18 182r18
+35V13*Date_To_Time{6R12} 35>26 35>34 6|201b10 236l5 236t17
+35i26 To_Hour{integer} 6|201b23 219r23
+35i34 To_Minute{integer} 6|201b31 219r42
+36V13*Minutes_From_Date{6R12} 36>31 36>37 6|239b10 267l5 267t22
+36i31 Hours{integer} 6|239b28 253r16
+36i37 Minutes{integer} 6|239b34 253r33
+X 6 dates.adb
+11i1 From_Time{2|44I9} 19m1 22r24
+11i12 To_Time{2|44I9} 20m1 22r14
+13i1 Diff_Time{integer} 24m1 25r9
+13i12 Days{integer} 25m1 27r8
+15o1 Diff_Calc{duration} 22m1 24r22
+33i1 The_Time{2|44I9} 43m1 45r7 49r24 52r14
+33i11 To_Time{2|44I9} 47m1 49r14 52r4
+35i1 Diff_Time{integer} 59m1 60r9
+35i12 Days{integer} 60m1 62r8
+37i1 Year{integer} 45m16
+37i7 Month{integer} 45m21
+37i14 Day{integer} 45m27
+39o1 Sec_Today{duration} 45m31 53r29 55r29
+39o12 Diff_Sec{duration}
+39o22 Diff_Calc{duration} 49m1 53m4 53r17 55m4 55r17 59r22
+68i1 My_Time{2|44I9} 84m1 86r7 88r8
+68i10 The_Time{2|44I9} 78m1
+70i1 The_Year{integer} 86m15
+70i11 The_Month{integer} 86m24
+70i22 The_Day{integer} 86m34
+72i1 My_Days{integer} 80m1 82m1 82r22 84r29
+74o1 Sec_Today{duration} 86m42
+74o12 Diff_Sec{duration}
+74o22 Diff_Calc{duration}
+94i1 My_Time{2|44I9} 104m1 110m1 110r12 112r7 114r8
+96i1 My_Year{integer} 112m15
+96i10 My_Month{integer} 112m23
+96i20 My_Day{integer} 112m32
+98i1 My_Days{integer} 106m1 108m1 108r22 110r31
+100o1 Sec_Today{duration} 112m39
+100o12 Diff_Sec{duration}
+100o22 Diff_Calc{duration}
+120r1 The_Result{5|6R12} 142m1 143m1 144m1 146r8
+121i1 My_Time{2|44I9} 132m1 135r25
+121i10 The_Time{2|44I9} 133m1 135r14
+123i1 Diff_Time{integer} 137m1 138r9 139r10 140r12
+123i12 Days{integer} 138m1 142r20
+123i18 Hours{integer} 139m1 143r21
+123i25 Minutes{integer} 140m1 144r23
+125o1 Diff_Calc{duration} 135m1 137r22
+125o12 T1{duration} 129m1 132r50
+125o16 T2{duration} 130m1 133r45
+152i1 The_Year{integer} 173m19 175r22 187m19 189r22
+152i10 The_Month{integer} 173m28 175r51 187m28 189r51
+152i20 The_Day{integer} 173m38 175r79 187m38 189r79
+154i1 Days{integer} 168m4 169r10 171m4 171r12 172r46 181m4 182r10 184m4 184r12
+. 186r46
+156o1 The_Seconds{duration} 173m46 187m46
+158i1 The_Time{2|44I9} 172m4 173r10 186m4 187r10
+160i1 Index{integer} 170m4 170r13 176r17 177r21 183m4 183r13 190r17 196r21
+161r1 Out_Rec{5|22R12} 176m4 177m4 190m4 196m4 197r11
+162r1 Local_Rec{5|13R12} 175m4 175m32 175m62 176r27 189m4 189m32 189m62 190r27
+203i1 The_Time{2|44I9} 215m4 217r10
+205i1 Days{integer} 224m4 230r23
+205i7 Hours{integer} 225m4 231r24
+205i14 Minutes{integer} 226m4 232r26
+205i23 Seconds{integer} 221m4 224r12 225r13 226r15
+205i32 Seconds_Offset{integer} 219m4 221r15
+207r1 The_Result{5|6R12} 230m4 231m4 232m4 234r11
+209o1 The_Seconds{duration} 217m46 221r40
+211i1 The_Year{integer} 217m19
+211i10 The_Month{integer} 217m28
+211i20 The_Day{integer} 217m38
+240r1 The_Result{5|6R12} 261m4 262m4 263m4 265r11
+249i1 Seconds{integer} 253m4 255r16 256r17 257r19
+249i10 The_Days{integer} 255m4 261r23
+249i20 The_Hours{integer} 256m4 262r24
+249i31 The_Minutes{integer} 257m4 263r26
+

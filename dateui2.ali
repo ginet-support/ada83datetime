@@ -1,0 +1,142 @@
+V "GNAT Lib v2016"
+M P W=b
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U dateui2%b		dateui2.adb		789c4342 NE OO SU
+Z ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W ada.text_io.integer_io%s
+W calendar%s		calendar.ads		calendar.ali
+W dates%s		dates.adb		dates.ali
+W interfaces%s		interfac.ads		interfac.ali
+W text_io%s		text_io.ads		text_io.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-calend.ads		20160516092930 2d5f01d4 ada.calendar%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-tiinau.ads		20160516092930 8114c8e4 ada.text_io.integer_aux%s
+D a-tiinio.ads		20160516092928 aa04e5d6 ada.text_io.integer_io%s
+D a-tiinio.adb		20160516092930 df9cd7af ada.text_io.integer_io%b
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D calendar.ads		20160516092926 2cb525cd calendar%s
+D dates.ads		20160911151316 6d4f7082 dates%s
+D dateui2.adb		20160911152220 7cb030c4 dateui2%b
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D system.ads		20160516092930 2da59038 system%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+D text_io.ads		20160516092930 45d626c9 text_io%s
+X 2 a-calend.ads
+44I9*Time<213I9> 14|11r24
+71U14*Split 14|47s20 59s20 64s20
+116X4*Time_Error 14|99r6
+213I9 Time_Rep<long_long_integer>
+X 7 a-textio.ads
+166U14*New_Line 14|48s101 52s50 53s112 54s112 56s73 56s82 60s109 62s49 62s58
+. 65s109 66s112 66s121 68s112 72s141 73s20 76s99 83s66 86s20 87s135 89s20
+. 90s135
+208U14*Put 14|48s53 48s78
+242U14*Put 14|44s7 48s20 50s20 50s49 50s81 52s35 53s20 53s51 53s84 54s20
+. 54s51 54s84 56s20 56s60 57s20 60s20 60s49 60s81 61s20 61s54 61s91 62s20
+. 65s20 65s49 65s81 66s20 66s51 66s84 67s20 67s46 68s20 68s51 68s84 69s20
+. 69s46 72s20 72s57 72s97 75s20 75s49 75s81 76s20 76s64 81s22 82s22 83s22
+. 85s20 85s57 87s20 87s55 87s93 88s20 88s57 90s20 90s55 90s93
+263U14*Put_Line 14|35s7 36s7 37s7 38s7 39s7 40s7 41s7 42s7 43s7 99s20 100s26
+. 101s16
+X 9 a-tiinio.ads
+46k21*Integer_IO 85e27 14|6r26
+56U14 Get 14|44s24[6] 50s34[6] 50s65[6] 50s95[6] 53s36[6] 53s68[6] 53s98[6]
+. 54s36[6] 54s68[6] 54s98[6] 57s43[6] 61s39[6] 61s75[6] 61s110[6] 62s39[6]
+. 66s36[6] 66s68[6] 66s98[6] 67s34[6] 67s63[6] 68s36[6] 68s68[6] 68s98[6]
+. 69s34[6] 69s63[6] 75s34[6] 75s65[6] 75s94[6] 76s50[6] 76s87[6] 85s45[6]
+. 85s85[6] 88s45[6] 88s85[6]
+66U14 Put 14|48s38[6] 48s62[6] 48s87[6] 52s24[6] 56s42[6] 60s34[6] 60s65[6]
+. 60s95[6] 65s34[6] 65s65[6] 65s95[6] 72s35[6] 72s73[6] 72s115[6] 81s37[6]
+. 82s39[6] 83s37[6] 87s34[6] 87s71[6] 87s111[6] 90s34[6] 90s71[6] 90s111[6]
+X 12 calendar.ads
+18K9*Calendar=18:30 14|1w15 2r14
+X 13 dates.ads
+2K9*Dates 38e10 14|1w25 2r24
+6R12*Time_Result 11e17 14|23r17
+8i10*Days{integer} 14|72r50 87r49 90r49
+9i10*Hours{integer} 14|72r88 87r86 90r86
+10i10*Minutes{integer} 14|72r130 87r126 90r126
+15i13*Year{integer} 14|81r61
+16i13*Month{integer} 14|82r63
+17i13*Day{integer} 14|83r61
+20A12*Detail_List(13R12)<integer>
+22R12*Detail_Results 26e20 14|24r18
+24a13*Item{20A12} 14|81m53 82m55 83m53
+25i13*Depth{integer} 14|80r45
+28V13*Today{2|44I9} 14|32s14
+29V13*Date_To_Date{integer} 14|55s35
+30V13*Days_To_Date{integer} 14|51s32
+31V13*Days_From_Now{2|44I9} 14|58s29
+32V13*Days_From_Date{2|44I9} 14|63s29
+33V13*Day_And_Time{6R12} 14|71s34
+34V13*DateDetail{22R12} 14|78s35
+35V13*Date_To_Time{6R12} 14|86s44
+36V13*Minutes_From_Date{6R12} 14|89s44
+X 14 dateui2.adb
+5U11*DateUI2 5b11 104l8 104t15
+6K12 Int_Io[9|46] 7r8
+9a4 Copyright{string}
+11i4 Time1{2|44I9} 58m20 59r26
+11i11 Time2{2|44I9} 63m20 64r26
+11i18 Now{2|44I9} 32m7 47r26
+13i4 Manual_Days{integer} 55m20 56r46
+13i17 Days{integer} 51m24 52r28 57m47 58r43 62m43 63r74
+14i4 From_Year{integer} 47m30 48r42 50m38 51r45 59m32 60r38 61m43 63r44 64m32
+. 65r38 75m38 78r46
+14i15 From_Month{integer} 47m40 48r66 50m69 51r55 59m42 60r69 61m79 63r54
+. 64m42 65r69 75m69 78r56
+14i27 From_Day{integer} 47m51 48r91 50m99 51r66 59m53 60r99 61m114 63r65
+. 64m53 65r99 75m98 78r67
+15o4 Dummy{duration} 47m60 59m62 64m62
+17i4 D2D_Year1{integer} 53m40 55r48 66m40 71r47
+17i15 D2D_Month1{integer} 53m72 55r58 66m72 71r57
+17i27 D2D_Day1{integer} 53m102 55r69 66m102 71r68
+18i4 D2D_Year2{integer} 54m40 55r78 68m40 71r93
+18i15 D2D_Month2{integer} 54m72 55r88 68m72 71r103
+18i27 D2D_Day2{integer} 54m102 55r99 68m102 71r114
+20i4 Hours1{integer} 67m38 71r77 85m49 86r57 88m49 89r62
+20i12 Hours2{integer} 69m38 71r123
+20i20 Minutes1{integer} 67m67 71r84 85m89 86r64 88m89 89r69
+20i30 Minutes2{integer} 69m67 71r130
+21i4 Interval{integer} 76m54 78r76
+21i14 Period{integer} 76m91 78r85
+23r4 The_Result{13|6R12} 71m20 72r39 72r77 72r119 86m30 87r38 87r75 87r115
+. 89m30 90r38 90r75 90r115
+24r4 The_Details{13|22R12} 78m20 80r33 81r41 82r43 83r41
+26i4 Choice{integer} 44m28 46r12
+80i23 I{integer} 81r58 82r60 83r58
+X 29 text_io.ads
+24K9*Text_IO=24:29 14|1w6 2r5
+
